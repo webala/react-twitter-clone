@@ -1,4 +1,12 @@
-.sidebar-tweet { /* !important is used so as to overide material-ui css for the button*/
+.sidebar {
+    border-right: 1px solid var(--twitter-background);
+    flex: 0.3; /* Use 30% of screen. property used on flex items*/
+    min-width: 250px;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.sidebar-tweet-btn { /* !important is used so as to overide material-ui css for the button*/
     background-color: var(--twitter-color) !important;
     border: none !important;
     color: white !important;
@@ -7,4 +15,11 @@
     border-radius: 30px !important;
     height: 50px !important;
     margin-top: 20px;
+}
+
+.sidebar-twitter-icon {
+    color: var(--twitter-color);
+    font-size: 30px !important;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }

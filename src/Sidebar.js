@@ -16,7 +16,7 @@ function Sidebar() {
   return (
     <div className='sidebar'>
         
-        <TwitterIcon />
+        <TwitterIcon className='sidebar-twitter-icon'/>
 
         <SidebarOption active Icon={HomeIcon} text='Home'/>
         <SidebarOption Icon={TagIcon} text='Explore'/>
@@ -27,7 +27,7 @@ function Sidebar() {
         <SidebarOption Icon={PermIdentityIcon} text='Profile'/>
         <SidebarOption Icon={MoreHorizIcon} text='More'/>
         
-        <Button variant='outlined' className='sidebar-tweet' fullWidth>Tweet</Button>{/* Variant is a style provided by material ui*/}
+        <Button variant='outlined' className='sidebar-tweet-btn' fullWidth>Tweet</Button>{/* Variant is a style provided by material ui*/}
     </div>
   )
 }
