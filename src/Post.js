@@ -21,25 +21,25 @@ function Post({
     return (
         <div className='post'>
             <div className='post-avatar'>
-            <Avatar src={profile_pic}/>
+            <Avatar src={avatar}/>
             </div>
 
             <div className='post-body'>
                 <div className='post-header'>
                     <div className='post-header-text'>
                         <h3>
-                            Daniel Webala {""}<span className='post-header-special'>
-                                <VerifiedIcon className='post-badge' fontSize='small'/> @web_d
+                            {displayName} {""}<span className='post-header-special'>
+                                {verified && <VerifiedIcon className='post-badge' fontSize='small'/>} @{username}
                             </span>
                         </h3>
                     </div>
             
                     <div className='past-header-description'>
-                        <p>Just updated my profile pic. Leave a like for good luck.</p>
+                        <p>{text}</p>
                     </div>
                 </div>
 
-                <img src={profile_pic} />
+                <img src={image} />
 
                 <div className='post-footer'>
                     <ChatBubbleOutlineIcon fontSize='small'/>
